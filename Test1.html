@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgb(62, 173, 173), yellow);
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .div1{
+            background-color: blue;
+            width: 500px;
+            height: 300px;
+            color: aliceblue;
+            text-align: center;
+            font-size: 30px;
+        }
+        .div1 h1::before{
+            content: "Py";
+            color: red;
+
+        }
+        .div1 h1:hover::before{
+            color: aliceblue;
+        }
+        h1:hover{
+            color: red;
+
+        }
+        .div1 h2:hover{
+            color: pink;
+            cursor: pointer;
+
+        }
+        .div1:hover{
+            width: 600px;
+            height: 300px;
+            font-size: 30px;
+            background: rgba(102, 41, 107, 0.11);
+            /* background-color: transparent; */
+            backdrop-filter: blur(40px) ;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="div1">
+        <h1>spiders</h1>
+        <h2>Basavanagudi</h2>
+
+    </div>
+</body>
+
+</html>

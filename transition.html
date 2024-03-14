@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .main div{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            border: 2px red solid;
+        }
+        .main .box1:hover{
+            height: 400px;
+            width: 400px;
+            background-color: white;
+            border: 5px rgb(190, 14, 43);
+            border-radius: 20px;
+            transition: all 2s ease;
+            /*transition-property: all;
+            transition-duration: 4s;
+            transition-timing-function: ease;
+            transition-delay: 0s;*/
+        }
+        .main .box2:hover{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(190, 14, 43);
+            border: 5px green solid;
+            border-radius: 20px;
+            transition: all 2s ease-in;
+
+        }
+        .main .box3:hover{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(190, 14, 43);
+            border: 5px green solid;
+            border-radius: 20px;
+            transition: all 2s ease-out;
+
+        }
+        .main .box4:hover{
+            height: 400px;
+            width: 400px;
+            background-color: rgb(190, 14, 43);
+            border: 5px green solid;
+            border-radius: 20px;
+            transition: all 2s ease-in-out;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    </div>
+</body>
+</html>

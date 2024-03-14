@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 60px;
+            width: 0px;
+            background-color: blue;
+            border: solid;
+            border-radius: 20px;
+            /* Animation Property*/
+            animation-name: loader;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes loader{
+            from{
+                width: 0px;
+            }
+            to{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

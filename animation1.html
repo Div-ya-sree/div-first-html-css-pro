@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*.box{
+            height: 60px;
+            width: 0px;
+            background-color: blue;
+            border: solid;
+            border-radius: 50px;*/
+            /* Animation Property*/
+            /*animation-name: loader;
+            animation-duration: 4s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;*/
+            /*animation: loader 4s ease infinite alternate;
+        }
+        @keyframes loader{
+            from{
+                width: 0px;
+            }
+            to{
+                width: 100%;
+            }
+    
+            
+        }*/
+        .box{
+            height: 250px;
+            width: 250px;
+            background-color: rgb(207, 207, 160);
+            color: rgb(190, 14, 43);
+            /*border-radius: 50%;*/
+            font-size: 50px;
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: move 7s ease-in-out;
+            position: absolute;
+        }
+        /*@keyframes move {
+            from{
+                left: 0px;
+            }
+            to{
+                left: 1110px;
+            }        
+        }*/
+       /* @keyframes move{
+            0%{
+                left: 0;
+                top: 0;
+            }
+            25%{
+                top: 0;
+                left: 1290px;
+                transform: rotate(90drg);
+            }
+            50%{
+                top:500px;
+                left: 1290px;
+                transform: rotate(180deg);
+            }
+            75%{
+                top: 500px;
+                left: 0;
+                transform: rotate(270deg);
+            }
+            100%{
+                top: 0;
+                left: 0;
+                transform: rotate(360deg);
+            }
+        }*/
+        @keyframes move{
+            0%{
+                top:0;
+                left: 0;
+            }
+            25%{
+                top: 500px;
+                left: 323px;
+            }
+            50%{
+                top: 0;
+                left: 645px;
+            }
+            75%{
+                top: 500px;
+                left: 968px;
+            }
+            100%{
+                top: 0;
+                left: 1290px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>
